@@ -1,10 +1,10 @@
 'use client';
 
+import Image from "next/image";
+
 import { Button, ClientCarousel, Footer, Header, ScrollIndicator, ServicesCards, SupportButton, Title } from "../src/components/index";
 
-import { ContainerBody, Banner, ContainerTop, ContentLeft, ContentRight, FirstDescription, SecondDescription, ContainerMain, ContainerAbout, Text, ContainerServices, ContainerPortfolio, Mask, ContainerClients, ContainerContact, ContactCard } from "./styles";
-
-import Image from "next/image";
+import { ContainerBody, Banner, ContainerTop, ContentLeft, ContentRight, FirstDescription, SecondDescription, ContainerMain, ContainerAbout, Text, ContainerServices, ContainerPortfolio, Mask, ContainerClients, ContainerContact, ContactCard, ImageLogo } from "./styles";
 
 export default function Page() {
     return (
@@ -17,7 +17,7 @@ export default function Page() {
                     <Mask />
                     <div className="containerBanner">
                         <ContentLeft>
-                            <Image src="/logo.svg" alt="Logo da Empresa" width={400} height={140} />
+                            <ImageLogo src="/logo.svg" alt="Logo da Empresa" width={400} height={140} />
                             <FirstDescription>
                                 Fortaleça sua empresa com nossa experiência especializada.
                             </FirstDescription>
@@ -76,12 +76,15 @@ export default function Page() {
                     <Mask />
                     <div className="content">
                         <Title>Portfólio</Title>
-                        <Text>Clique em Veja mais e tenha acesso a todos os nossos serviços, desde sites institucionais e landing pages até estratégias para fortalecer sua presença online. Cada projeto é desenvolvido com atenção aos detalhes, design moderno e funcionalidade, garantindo que sua marca se destaque e conquiste resultados reais.
+                        <Text>
+                            Clique em Veja mais e tenha acesso a todos os nossos serviços, desde sites institucionais e landing pages até estratégias para fortalecer sua presença online. Cada projeto é desenvolvido com atenção aos detalhes, design moderno e funcionalidade, garantindo que sua marca se destaque e conquiste resultados reais.
                             <br /><br />
-                            Explore nosso portfólio e descubra como podemos impulsionar sua presença digital de forma autêntica e eficiente.</Text>
+                            Explore nosso portfólio e descubra como podemos impulsionar sua presença digital de forma autêntica e eficiente.
+                            <br /><br />
+                        </Text>
                     </div>
                     <div className="custom-button">
-                        <Button href="/portfolio">Veja mais <i className="ri-arrow-right-down-long-line"></i></Button>
+                        <Button href="/Portfolio">Veja mais <i className="ri-arrow-right-down-long-line"></i></Button>
                     </div>
                 </ContainerPortfolio>
 

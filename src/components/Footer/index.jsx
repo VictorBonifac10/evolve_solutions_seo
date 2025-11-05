@@ -1,9 +1,10 @@
 'use client';
 
+import Image from "next/image";
+import Link from "next/link";
+
 import { ContainerFooter, Text } from "./styles";
 
-import Image from "next/image";
- 
 export function Footer() {
     return (
 
@@ -14,14 +15,14 @@ export function Footer() {
             </Text>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <Link href="/">Home</Link>
                 </li>
                 <li>
-                    <a href="/portfolio">Portfólio</a>
+                    <Link href="/Portfolio">Portfólio</Link>
 
                 </li>
                 <li>
-                    <a href="#">Termos e Condições</a>
+                    <Link href="#">Termos e Condições</Link>
                 </li>
             </ul>
             <div>

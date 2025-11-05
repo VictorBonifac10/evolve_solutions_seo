@@ -1,10 +1,12 @@
 'use client';
 
+import Link from 'next/link';
+//import { usePathname } from "next/navigation";
+
 import { useState, useEffect } from 'react'
 import {
     CContainer,
     CNavbarNav,
-    CNavItem,
     COffcanvasHeader,
     COffcanvasTitle,
     COffcanvasBody,
@@ -12,11 +14,13 @@ import {
 } from '@coreui/react'
 import '@coreui/coreui/dist/css/coreui.min.css'
 
-import { StyledNavbar, StyledOffcanvas, StyledNavbarToggler, StyledNavLink } from './styles'
+import { StyledNavbar, StyledOffcanvas, StyledNavbarToggler, NavItem } from './styles'
 
 export function Header() {
+
     const [visible, setVisible] = useState(false)
     const [scrolled, setScrolled] = useState(false)
+    //const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 20)
@@ -29,16 +33,12 @@ export function Header() {
 
             <CContainer fluid className="d-flex justify-content-end align-items-center">
                 <CNavbarNav className="d-none d-lg-flex flex-row gap-5 justify-content-end">
-                    <CNavItem>
-                        <StyledNavLink href="/">
-                            Home
-                        </StyledNavLink>
-                    </CNavItem>
-                    <CNavItem>
-                        <StyledNavLink href="/Portfolio">
-                            Portfólio
-                        </StyledNavLink>
-                    </CNavItem>
+                    <NavItem>
+                        <Link className='link' href="/">Home</Link>
+                    </NavItem>
+                    <NavItem>
+                        <Link className='link' href="/Portfolio">Portfólio</Link>
+                    </NavItem>
                 </CNavbarNav>
 
                 <StyledNavbarToggler
@@ -61,16 +61,12 @@ export function Header() {
                     </COffcanvasHeader>
                     <COffcanvasBody>
                         <CNavbarNav className="flex-column gap-3">
-                            <CNavItem>
-                                <StyledNavLink href="/">
-                                    Home
-                                </StyledNavLink>
-                            </CNavItem>
-                            <CNavItem>
-                                <StyledNavLink href="/portfolio">
-                                    Portfólio
-                                </StyledNavLink>
-                            </CNavItem>
+                            <NavItem>
+                                <Link className='link' href="/">Home</Link>
+                            </NavItem>
+                            <NavItem>
+                                <Link className='link' href="/portfolio">Portfólio</Link>
+                            </NavItem>
                         </CNavbarNav>
                     </COffcanvasBody>
                 </StyledOffcanvas>

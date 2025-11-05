@@ -32,7 +32,7 @@ export const ProductCard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15%;
+  gap: 8%;
   width: 85%;
   position: relative; 
   border: 1px solid rgba(255, 255, 255, 0.09);
@@ -85,7 +85,7 @@ export const ProductCard = styled.div`
   .custom-button{
     display: flex;
     gap: 10px;
-    width: 70%;
+    width: 90%;
 
   @media(max-width: 870px){
     flex-direction: column;

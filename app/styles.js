@@ -1,6 +1,7 @@
 'use client';
 
 import { styled } from 'styled-components'
+import Image from "next/image";
 
 export const ContainerBody = styled.div`
 
@@ -82,6 +83,15 @@ export const FirstDescription = styled.p`
         max-width: 90%;
         text-align: center;
     }
+`;
+
+export const ImageLogo = styled(Image)`
+
+  @media (max-width: 1085px) {
+    width: 200px;
+    height: 80px;
+  }
+
 `;
 
 export const SecondDescription = styled.p`

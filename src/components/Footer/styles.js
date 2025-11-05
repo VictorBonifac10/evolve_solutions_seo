@@ -25,9 +25,12 @@ export const ContainerFooter = styled.footer`
     a{
       text-decoration: none;
       color: #fff;
+
        &:hover{
         color: #00fbff96;
+        border-bottom: 2px solid #00fbff96;
       }
+      
      }
     }
   }

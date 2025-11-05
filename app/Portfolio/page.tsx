@@ -1,12 +1,13 @@
 'use client';
 
+import Link from 'next/link';
+import Image from 'next/image';
+
 import { products } from "../../src/data/products";
-
 import { Button, Footer, Header, ScrollIndicator, SupportButton, Title } from "../../src/components/index";
-import { PortfolioContainer, CardContainer, ProductCard, Mask, Text, ImageProduct, BenefitsContainer } from "./styles";
+import { PortfolioContainer, CardContainer, ProductCard, Mask, Text, BenefitsContainer } from "./styles";
 
-export default function Portfolio() {
-
+export default function Portifolio() {
     return (
         <PortfolioContainer>
             <Header />
@@ -18,7 +19,7 @@ export default function Portfolio() {
             <CardContainer>
                 {products.map((data) => (
                     <ProductCard key={data.name} >
-                        <video src="../../public/videoPortfolio3.mp4" preload="none" autoPlay muted loop></video>
+                        <video src="/videoPortfolio3.mp4" preload="none" autoPlay muted loop></video>
                         <Mask />
                         <div className="content">
                             <Title>{data.name}</Title>
@@ -37,17 +38,17 @@ export default function Portfolio() {
                                 <Button>
                                     Ver modelo
                                     <i className="ri-arrow-right-down-long-line"></i>
-                                    <a href={data.link}></a>
+                                    <Link href={data.link}></Link>
                                 </Button>
                                 <Button variant="secondary">
-                                    <i class="ri-whatsapp-line"></i>
+                                    <i className="ri-whatsapp-line"></i>
                                     Orçamento
-                                    <a href="#"></a>
+                                    <Link href="#"></Link>
                                 </Button>
                             </div>
                         </div>
                         <div className="content-img">
-                            <ImageProduct src={data.url} alt="page" />
+                            <Image src={data.url} alt="page" width={350} height={400} />
                         </div>
                     </ProductCard>
                 ))}

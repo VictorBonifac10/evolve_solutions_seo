@@ -5,7 +5,7 @@ import React from "react";
 
 export const metadata: Metadata = {
     title: "Evolve Solutions",
-    description: "Site migrado para Next.js",
+    description: "Soluções digitais para sua empresa",
 };
 
 export default function RootLayout({

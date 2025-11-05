@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components'
-import { CNavbar, COffcanvas, CNavbarToggler, CNavLink } from '@coreui/react'
+import { CNavbar, COffcanvas, CNavbarToggler, CNavItem } from '@coreui/react'
 
 export const StyledNavbar = styled(CNavbar)`
   position: fixed;
@@ -66,11 +66,18 @@ export const StyledNavbarToggler = styled(CNavbarToggler)`
   }
 `
 
-export const StyledNavLink = styled(CNavLink)`
-color: ${props => (props.$isActive ? '#00fbff96 !important' : '#FFFFFF !important')};  border-bottom: ${props => (props.$isActive ? `2px solid #00fbff96` : 'none')};
-  display: inline-block;
+export const NavItem = styled(CNavItem)`
 
+  padding: 10px;
+
+  .link{
+    color: white;
+    text-decoration: none;
+    
   &:hover{
     color: #00fbff96;
+    border-bottom: 2px solid #00fbff96;
   }
-`
+
+  }
+`;
