@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { alertFunction } from '../../src/utils/alertFunction';
+
 
 import { products } from "../../src/data/products";
 import { Button, Footer, Header, ScrollIndicator, SupportButton, Title } from "../../src/components/index";
@@ -35,12 +37,12 @@ export default function Portifolio() {
                                 </div>
                             </BenefitsContainer>
                             <div className="custom-button">
-                                <Button>
+                                <Button onClick={alertFunction}>
                                     Ver modelo
                                     <i className="ri-arrow-right-down-long-line"></i>
                                     <Link href={data.link}></Link>
                                 </Button>
-                                <Button variant="secondary">
+                                <Button onClick={alertFunction} variant="secondary">
                                     <i className="ri-whatsapp-line"></i>
                                     Orçamento
                                     <Link href="#"></Link>

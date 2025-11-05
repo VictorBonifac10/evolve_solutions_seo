@@ -6,6 +6,7 @@ import { Button, ClientCarousel, Footer, Header, ScrollIndicator, ServicesCards,
 
 import { ContainerBody, Banner, ContainerTop, ContentLeft, ContentRight, FirstDescription, SecondDescription, ContainerMain, ContainerAbout, Text, ContainerServices, ContainerPortfolio, Mask, ContainerClients, ContainerContact, ContactCard, ImageLogo } from "./styles";
 
+
 export default function Page() {
     return (
         <ContainerBody>

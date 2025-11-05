@@ -11,6 +11,7 @@ export const ContainerButton = styled.a`
     padding: 14px;
     width: 100%;
     font-size: 16px;
+    cursor: pointer;
 
     position: relative;
     z-index: 2;

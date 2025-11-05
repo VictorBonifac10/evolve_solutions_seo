@@ -1,10 +1,11 @@
 'use client';
 
+import { alertFunction } from '../../utils/alertFunction';
 import { Button } from './styles'
 
 export function SupportButton() {
     return (
-        <Button>
+        <Button onClick={alertFunction}>
             <i className="ri-customer-service-2-fill"></i>
             <div>
                 <h2>Precisa de ajuda?</h2>

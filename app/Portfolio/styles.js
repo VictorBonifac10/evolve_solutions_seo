@@ -32,13 +32,13 @@ export const ProductCard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8%;
+  gap: 12%;
   width: 85%;
   position: relative; 
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 40px;
   overflow: hidden;
-  padding: 25px;
+  padding: 20px;
   color: #fff;
   transition: 1s;
 
