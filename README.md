@@ -9,9 +9,10 @@ Site institucional para uma startup de tecnologia, com landing page responsiva d
 
 ## ✨ Recursos
 
-- React/Next.js
-- TypeScript
-- Styled-Components
+- React/Next.js (Front-End/Performance)
+- Yarn (Gerenciador de Pacotes)
+- TypeScript (Configurações)
+- Styled-Components (Estilização)
 - Design responsivo
 - Código limpo e organizado
 
